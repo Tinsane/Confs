@@ -76,105 +76,7 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
-
-"==================================="
-" Configure VimAirline "
-"==================================="
-let g:airline#extensions#keymap#enabled = 0 "Не показывать текущий маппинг
-let g:airline_section_z = "%l/%L Col:%c" "Кастомная графа положения курсора
-"==================================="
-" Configure VimAirline End "
-"==================================="
-
-set hlsearch
-
-set autoread                             " Перечитывать открытые файлы если они были изменены извне
-
-set encoding=utf-8                       " Кодировка по-умолчанию utf-8
-set termencoding=utf-8                   " Кодировка терминала тоже utf-8
-set fileencodings=utf-8,cp1251,koi8-r    " Список кодировок, которые vim будет перебирать при открытии файла
-
-set novisualbell                         " Выключаем бибиканье и мигание
-set t_vb=
-
-
-set ignorecase
-set smartcase
-set si                                   " Умное добавление табов (с учетом скобок и пр.)
-set tabstop=4                            " Ширина таба - 4 пробела
-set shiftwidth=4                         " Количество вставляемых пробелов при использовании < и >
-set expandtab                            " Разворачивать табы в пробелы
-set smarttab                             " Удалять пробелы по 4, если они в начале строки
-
-set nu rnu                               " Включить нумерацию строк
-set t_Co=256                             " Сказать виму, что твой терминал поддерживает 256 цветов
-
-
-syntax on
-colorscheme peachpuff " Cool colorscheme
-set noeol
-set showcmd
-set autoindent
-set cindent
-set mouse=a
-set clipboard=unnamedplus
-set incsearch
-set autowrite
-
-
-set exrc
-set secure
-
-
-set cursorline " Show line under cursor.
-set colorcolumn=110 " Show line after 110 characters
-highlight ColorColumn ctermbg=lightgray
-
-
-"==================================="
-" Configure competitive programming environment "
-"==================================="
-set makeprg=make\ -B\ -f\ ~/makefile_slow\ %<
-set omnifunc=ale#completion#OmniFunc
-map <F5> :make<CR>
-map <F8> :!make -B -f ~/makefile_fast %<<CR>
-map <F6> :!./%< <input.txt<CR>
-map <C-F6> :!./%<<CR>
-map <F7> :!./%< <input.txt 2>/dev/null<CR>
-map <C-T> :!./test.sh %<<CR>
-autocmd FileType python map <buffer> <F6> :!python3 %<CR>
-"==================================="
-" Configure competitive programming environment End "
-"==================================="
-
-
-map <C-F>r <PLUG>(ale_find_references)
-map <C-F>d <PLUG>(ale_go_to_definition)
-
-
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
-
-set keymap=russian-jcukenwin
-set iminsert=0
-set imsearch=0
-highlight lCursor guifg=NONE guibg=Cyan
-
-" For MacOS copy-paste work
-" vnoremap <C-c> :w !pbcopy<CR><CR>
-" noremap <C-v> :r !pbpaste<CR><CR>
 
 "==================================="
 " Configure YCM "
@@ -187,4 +89,123 @@ let g:ycm_cache_omnifunc=0
 let g:ycm_seed_identifiers_with_syntax=1
 "==================================="
 " Configure YCM End "
+"==================================="
+
+
+"==================================="
+" Configure VimAirline "
+"==================================="
+let g:airline#extensions#keymap#enabled = 0 "Не показывать текущий маппинг
+let g:airline_section_z = "%l/%L Col:%c" "Кастомная графа положения курсора
+"==================================="
+" Configure VimAirline End "
+"==================================="
+
+
+" Put your non-Plugin stuff after this line
+
+
+"==================================="
+" Configure keyboard encodings "
+"==================================="
+set encoding=utf-8                       " Default encoding utf-8
+set termencoding=utf-8                   " Terminal default encoding utf-8
+set fileencodings=utf-8,cp1251,koi8-r    " Supported file encodings
+set keymap=russian-jcukenwin             " Keymap that allows having russian letters
+"==================================="
+" Configure keyboard encodings End "
+"==================================="
+
+
+set hlsearch
+set iminsert=0
+set imsearch=0
+set incsearch
+
+set novisualbell                         " Выключаем бибиканье и мигание
+set t_vb=
+
+set ignorecase
+set smartcase
+set si                                   " Умное добавление табов (с учетом скобок и пр.)
+set tabstop=4                            " Ширина таба - 4 пробела
+set shiftwidth=4                         " Количество вставляемых пробелов при использовании < и >
+set expandtab                            " Разворачивать табы в пробелы
+set smarttab                             " Удалять пробелы по 4, если они в начале строки
+
+
+syntax on
+set noeol
+set showcmd
+set autoindent
+set cindent
+set mouse=a
+set clipboard=unnamedplus
+
+set autoread                             " Перечитывать открытые файлы если они были изменены извне
+set autowrite
+
+
+set exrc
+set secure
+
+" set omnifunc=ale#completion#OmniFunc
+" map <C-F>r <PLUG>(ale_find_references)
+" map <C-F>d <PLUG>(ale_go_to_definition)
+
+" For MacOS copy-paste work
+" vnoremap <C-c> :w !pbcopy<CR><CR>
+" noremap <C-v> :r !pbpaste<CR><CR>
+
+
+"==================================="
+" Configure styles "
+"==================================="
+colorscheme peachpuff                    " Cool colorscheme
+set nu rnu                               " Relative line numbers
+set cursorline                           " Show line under cursor
+set colorcolumn=110                      " Show line after 110 characters
+set t_Co=256                             " Tell Vim that terminal supports 256 colors
+highlight ColorColumn ctermbg=lightgray
+highlight lCursor guifg=NONE guibg=Cyan
+"==================================="
+" Configure styles End "
+"==================================="
+
+
+"==================================="
+" Configure competitive programming environment "
+"==================================="
+set makeprg=make\ -B\ -f\ ~/makefile_slow\ %<
+map <F5> :make<CR>
+map <F8> :!make -B -f ~/makefile_fast %<<CR>
+map <F6> :!./%< <input.txt<CR>
+map <C-F6> :!./%<<CR>
+map <F7> :!./%< <input.txt 2>/dev/null<CR>
+" map <C-T> :!./test.sh %<<CR>
+autocmd FileType python map <buffer> <F6> :!python3 %<CR>
+"==================================="
+" Configure competitive programming environment End "
+"==================================="
+
+
+"==================================="
+" Turn off newbie movement "
+"==================================="
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+"==================================="
+" Turn off newbie movement End "
+"==================================="
+
+
+"==================================="
+" Configure native mappings "
+"==================================="
+map <C-K> :YcmCompleter GoToDeclaration<CR>
+map <C-T> :NERDTreeToggle<CR>
+"==================================="
+" Configure native mappings End "
 "==================================="
