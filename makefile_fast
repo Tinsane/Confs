@@ -1,0 +1,6 @@
+%: %.cpp
+	g++ -std=c++14 -O2 -DLOCAL -Wall -Wextra -Wshadow \
+	-Wno-unused-result -Wsequence-point $< -o $@
+
+%: %.c
+	gcc -DLOCAL -std=c11 -Wall -pedantic -O2 $< -o $@

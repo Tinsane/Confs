@@ -1,0 +1,10 @@
+%: %.cpp
+	g++ -std=c++17 -O0 -ggdb -DLOCAL -Wall -Wextra -Wshadow \
+	-Wno-unused-result -Wsequence-point -pedantic \
+	-fsanitize=address,undefined -fno-sanitize-recover $< -o $@
+
+%: %.c
+	gcc -DLOCAL -std=c11 -g -Wall -pedantic -O0 -fsanitize=address,undefined -fno-sanitize-recover $< -o $@
+
+%: %.tex
+	pdflatex $<
