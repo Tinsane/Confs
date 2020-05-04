@@ -22,6 +22,7 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   " Plugin 'SirVer/ultisnips'
   Plugin 'bling/vim-airline'
   Plugin 'scrooloose/nerdtree'
+  Plugin 'rafi/awesome-vim-colorschemes'
 
   "cd ~
   "mkdir ycm_build
@@ -161,7 +162,7 @@ set secure
 "==================================="
 " Configure styles "
 "==================================="
-colorscheme peachpuff                    " Cool colorscheme
+colorscheme gruvbox                      " Cool colorscheme
 set nu rnu                               " Relative line numbers
 set cursorline                           " Show line under cursor
 set colorcolumn=110                      " Show line after 110 characters
