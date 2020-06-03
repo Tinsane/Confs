@@ -116,36 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# The next line updates PATH for Yandex Cloud CLI.
-if [ -f '/home/vladimirlesk/yandex-cloud/path.bash.inc' ]; then source '/home/vladimirlesk/yandex-cloud/path.bash.inc'; fi
-# The next line enables shell command completion for yc.
-if [ -f '/home/vladimirlesk/yandex-cloud/completion.bash.inc' ]; then source '/home/vladimirlesk/yandex-cloud/completion.bash.inc'; fi
-
-
-
-function jctl_search {
-    export JUGGLER_TOKEN=AQAD-qJSJ1ZFAAAGk817-kzVpEE8jQBn9fCoSSg
-    ssh -o "ServerAliveInterval=5" -o "ServerAliveCountMax=3" vladimirlesk@jmon-master.search.yandex.net JUGGLER_OAUTH_TOKEN=$JUGGLER_TOKEN jctl --oauth "$@"
-}
-
-declare -A ya_web_sites
-ya_web_sites['st']='st.yandex-team.ru'
-ya_web_sites['wiki']='wiki.yandex-team.ru/users/vladimirlesk'
-ya_web_sites['setup']='setup.yandex-team.ru'
-ya_web_sites['golem']='golem.yandex-team.ru'
-ya_web_sites['mail']='mail.yandex-team.ru/?uid=1120000000087621&login=vladimirlesk#inbox'
-ya_web_sites['paste']='paste.yandex-team.ru'
-ya_web_sites['cya']='c.yandex-team.ru'
-ya_web_sites['yacal']='calendar.yandex-team.ru/week?uid=1120000000087621'
-
-declare -A mdb_web_sites
-mdb_web_sites['ships']='salt-db.mail.yandex-team.ru/ships'
-mdb_web_sites['mdb']='mdb.yandex-team.ru'
-mdb_web_sites['jenk']='jenkins.db.yandex-team.ru'
-mdb_web_sites['rev']='review.db.yandex-team.ru'
-mdb_web_sites['pgsync']='github.yandex-team.ru/mdb/pgsync'
-mdb_web_sites['salt']='github.yandex-team.ru/mdb/salt'
-
 declare -A web_sites
 web_sites['walg']='github.com/wal-g/wal-g'
 web_sites['mywalg']='github.com/Tinsane/wal-g'
@@ -161,12 +131,6 @@ web_sites['timnas']='timus.online/status.aspx?author=248409&status=accepted'
 
 function ff {
     x="$1"
-    if [ "${ya_web_sites[$x]}" != "" ]; then
-        x=${ya_web_sites[$x]};
-    fi
-    if [ "${mdb_web_sites[$x]}" != "" ]; then
-        x=${mdb_web_sites[$x]};
-    fi
     if [ "${web_sites[$x]}" != "" ]; then
         x=${web_sites[$x]};
     fi
@@ -205,13 +169,9 @@ alias gbr='git branch'
 alias gco='git checkout'
 # ==========  GIT ALIASES  ==========
 
-export PGSYNC=~/PycharmProjects/pgsync
-export WALG=~/go/src/github.com/wal-g/wal-g
 export GOPATH=/home/vladimirlesk/go/
 zsh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 . /usr/local/z.sh
-
-if [ -f '/home/vladimirlesk/CLionProjects/shad/shad-tpcc-course-2019/client/activate' ]; then . '/home/vladimirlesk/CLionProjects/shad/shad-tpcc-course-2019/client/activate'; fi
