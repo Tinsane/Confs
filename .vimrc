@@ -23,6 +23,9 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   Plugin 'bling/vim-airline'
   Plugin 'scrooloose/nerdtree'
   Plugin 'rafi/awesome-vim-colorschemes'
+  Plugin 'ctrlpvim/ctrlp.vim'
+
+  Plugin 'leafgarland/typescript-vim'
 
   "cd ~
   "mkdir ycm_build
