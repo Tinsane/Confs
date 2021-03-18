@@ -26,6 +26,7 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   Plugin 'ctrlpvim/ctrlp.vim'
 
   Plugin 'leafgarland/typescript-vim'
+  Plugin 'udalov/kotlin-vim'
 
   "cd ~
   "mkdir ycm_build
@@ -189,6 +190,8 @@ map <C-F6> :!./%<<CR>
 map <F7> :!./%< <input.txt 2>/dev/null<CR>
 " map <C-T> :!./test.sh %<<CR>
 autocmd FileType python map <buffer> <F6> :!python3 %<CR>
+autocmd FileType kotlin map <buffer> <F6> :!java -jar %<.jar <input.txt<CR>
+autocmd FileType kotlin map <buffer> <C-F6> :!java -jar %<.jar<CR>
 "==================================="
 " Configure competitive programming environment End "
 "==================================="
@@ -214,3 +217,5 @@ map <C-T> :NERDTreeToggle<CR>
 "==================================="
 " Configure native mappings End "
 "==================================="
+
+set shell=/bin/zsh

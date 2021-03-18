@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	email = vladimirlesk@gmail.com
+# Please adapt and uncomment the following lines:
+#	name = Vladimir Leskov
+#	email = vladimirlesk@gmail.com
+[credential]
+	username = tinsane
+	helper = osxkeychain
