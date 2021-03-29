@@ -14,3 +14,6 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 Install curl:  
 sudo apt install curl
+
+Install python:  
+yes | sudo apt install python3.9
