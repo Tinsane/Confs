@@ -39,3 +39,7 @@ sudo apt install fzf
 Install [z](https://github.com/rupa/z):  
 mkdir .zutil && cd .zutil && git clone https://github.com/rupa/z.git && cd ..
 
+Install [Spaceship](https://github.com/denysdovhan/spaceship-prompt):  
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1 && \  
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" 
+
