@@ -35,3 +35,7 @@ cp -r Confs/.SpaceVim.d Confs/.vimrc .
 
 Install [fzf](https://github.com/junegunn/fzf#installation):  
 sudo apt install fzf
+
+Install [z](https://github.com/rupa/z):  
+mkdir .zutil && cd .zutil && git clone https://github.com/rupa/z.git && cd ..
+
