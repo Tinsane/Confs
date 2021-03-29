@@ -5,3 +5,6 @@ sudo apt install terminator
 
 Install git:  
 yes | sudo apt install git  
+
+Install zsh:  
+yes | sudo apt install zsh
