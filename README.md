@@ -32,3 +32,6 @@ curl -sLf https://spacevim.org/install.sh | bash
 
 Get SpaceVim configs:  
 cp -r Confs/.SpaceVim.d Confs/.vimrc .
+
+Install [fzf](https://github.com/junegunn/fzf#installation):  
+sudo apt install fzf
