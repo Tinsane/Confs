@@ -52,7 +52,7 @@ cd $ZSH_CUSTOM/plugins && \
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 Install [golang](https://golang.org/doc/install):  
-Download tar gz
+Download tar gz  
 rm -rf /usr/local/go && \  
 tar -xvf go1.16.2.linux-amd64.tar.gz && \  
 sudo mv go /usr/local && \  
