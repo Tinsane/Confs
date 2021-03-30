@@ -65,7 +65,7 @@ sudo apt-get install python3-distutils && \
 sudo apt-get install python3-apt && \  
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \  
 python3 get-pip.py && \  
-export PATH=$PATH:/home/vladimir/.local/bin && \  
-echo 'export PATH=$PATH:/home/vladimir/.local/bin' >> ~/.profile
+export PATH=$PATH:$HOME/.local/bin && \  
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.profile
 
 
