@@ -68,4 +68,5 @@ python3 get-pip.py && \
 export PATH=$PATH:$HOME/.local/bin && \  
 echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.profile
 
-
+\# Prevent Yandex.Disk from syncing everything:  
+\# Change settings in tool config
