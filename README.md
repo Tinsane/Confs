@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt install terminator  
 
 \# Install brew and iterm2:  
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"  
 brew install --cask iterm2
 
 \# Install git:  
