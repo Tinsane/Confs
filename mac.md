@@ -41,6 +41,33 @@ brew install fzf
 \# Install [z](https://github.com/rupa/z):  
 mkdir .zutil && cd .zutil && git clone https://github.com/rupa/z.git && cd ..
 
+\# Install [bat](https://github.com/sharkdp/bat):  
+brew install bat
+
+\# Install [exa](https://github.com/ogham/exa):  
+brew install exa
+
+\# Install [fd](https://github.com/sharkdp/fd):  
+brew install fd
+
+\# Install [sd](https://github.com/chmln/sd):  
+brew install sd
+
+\# Install [dust](https://github.com/bootandy/dust):  
+brew install dust
+
+\# Install [hstr](https://github.com/dvorka/hstr):  
+brew install hstr
+
+\# Install [delta](https://github.com/dandavison/delta):  
+brew install delta
+
+\# Install [ripgrep](https://github.com/BurntSushi/ripgrep):  
+brew install ripgrep
+
+\# Install [procs](https://github.com/dalance/procs):  
+brew install procs
+
 \# Install [Spaceship](https://github.com/denysdovhan/spaceship-prompt):  
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1 &&  
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
