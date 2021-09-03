@@ -82,3 +82,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 \# Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh):  
 cd $ZSH_CUSTOM/plugins &&  
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+\# Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe#macos):  
+\# See `:h SpaceVim-faq`, https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion. 
+cd ~/.cache/vimfiles/repos/github.com/Valloric &&  
+  \\ ./install.py --clang-completer --go-completer
