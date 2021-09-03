@@ -26,6 +26,9 @@ brew install curl
 \# Install python:  
 brew install python@3.9
 
+\# Install python clang:  
+pip3 install clang
+
 \# Install [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim):  
 brew install neovim
 
