@@ -72,5 +72,31 @@ python3 get-pip.py && \
 export PATH=$PATH:$HOME/.local/bin && \  
 echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.profile
 
+\# Install bat:
+brew install bat
+
+\# Install click:
+cargo install click
+
+\# Install fd:
+brew install fd
+
+\# Install gh:
+brew install gh
+
+\# Install jira (will require customization):
+go get github.com/go-jira/jira/cmd/jira && \
+mkdir ~/.jira.d && \
+cat <<EOM >~/.jira.d/config.yml\nendpoint: https://jira.mycompany.com\nEOM\n && \
+jira login && \
+jira ls -u vladimir.leskov && \
+export SUBDOMAIN="https://databricks.atlassian.net"\nexport EMAIL="vladimir.leskov@databricks.com"\nmkdir -p ~/.jira.d\nprintf "endpoint: $SUBDOMAIN\nuser: $EMAIL\npassword-source: keyring" > ~/.jira.d/config.yml\n
+  
+\# Install jq:
+brew install jq
+  
+\# Install ripgrep:
+brew install ripgrep
+
 \# Prevent Yandex.Disk from syncing everything:  
 \# Change settings in tool config
