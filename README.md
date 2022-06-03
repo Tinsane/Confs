@@ -34,6 +34,9 @@ yes | sudo apt install python3-neovim
 \# Install [SpaceVim](https://spacevim.org/quick-start-guide/):  
 curl -sLf https://spacevim.org/install.sh | bash
 
+\# Install pynvim:  
+python3 -m pip install --user --upgrade pynvim
+
 \# Get SpaceVim configs:  
 cp -r Confs/.SpaceVim.d Confs/.vimrc .
 
