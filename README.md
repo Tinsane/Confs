@@ -106,3 +106,5 @@ brew install ripgrep
 
 \# Prevent Yandex.Disk from syncing everything:  
 \# Change settings in tool config
+
+\# Get rid of stupid man pages: https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog 
