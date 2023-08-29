@@ -79,7 +79,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 cd $ZSH_CUSTOM/plugins &&  
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-\# Install [fzf autocompletion](https://github.com/junegunn/fzf#using-homebrew)
+\# Install [fzf autocompletion](https://github.com/junegunn/fzf#using-homebrew)  
 $(brew --prefix)/opt/fzf/install
 
 \# Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh):  
