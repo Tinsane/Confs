@@ -47,9 +47,6 @@ mkdir .zutil && cd .zutil && git clone https://github.com/rupa/z.git && cd ..
 \# Install [bat](https://github.com/sharkdp/bat):  
 brew install bat
 
-\# Install [exa](https://github.com/ogham/exa):  
-brew install exa
-
 \# Install [fd](https://github.com/sharkdp/fd):  
 brew install fd
 
