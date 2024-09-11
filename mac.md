@@ -23,10 +23,7 @@ cp Confs/.zshrc .
 \# Install curl:  
 brew install curl
 
-\# Install python:  
-brew install python@3.9
-
-\# Install python clang:  
+\# (TODO : this step needs changing because installing packages to system python is discouraged) Install python clang:  
 pip3 install clang
 
 \# Install [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim):  
