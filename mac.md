@@ -65,6 +65,8 @@ brew install ripgrep
 \# Install [procs](https://github.com/dalance/procs):  
 brew install procs
 
+\# Install [latest OpenLens release](https://github.com/MuhammedKalkan/OpenLens/releases/tag/v6.5.2-366)
+
 \# Install [Spaceship](https://github.com/denysdovhan/spaceship-prompt):  
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1 &&  
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
